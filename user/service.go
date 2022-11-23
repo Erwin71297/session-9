@@ -31,7 +31,7 @@ var SESSION_ID = "id"
 // }
 
 func newPostgresStore() *pgstore.PGStore {
-	url := "postgres://postgres:password@127.0.0.1:5432/postgres?sslmode=disable"
+	url := "postgres://postgresuser:postgrespassword@postgres:5432/postgres?sslmode=disable"
 	authKey := []byte("my-auth-key-very-secret")
 	encryptionKey := []byte("my-encryption-key-very-secret123")
 

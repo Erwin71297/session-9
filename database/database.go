@@ -10,9 +10,9 @@ import (
 
 func ConnectPGLocal() *gorm.DB {
 	var (
-		dbUser  = "postgres"
-		dbPass  = "password"
-		dbHost  = "127.0.0.1"
+		dbUser  = "postgresuser"
+		dbPass  = "postgrespassword"
+		dbHost  = "postgres"
 		dbName  = "postgres"
 		dbPort  = "5432"
 		sslMode = "disable"
